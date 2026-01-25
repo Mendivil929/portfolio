@@ -6,10 +6,10 @@ import MotionTransition from "./transition-component";
 
 const Header = () => {
   return (
-    <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10 px-20">
+    <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10 px-5 md:px-20">
         <header>
-            <div className="container justify-between max-w-6xl mx-auto md:flex">
-                <Link href="/">
+            <div className="container justify-between w-full mx-auto md:flex">
+                <Link href="/" className="block w-full md:w-auto">
                     <h1 className="my-3 text-4xl font-bold text-center md:text-left">
                         MendivilTech
                         <span className="text-secondary">

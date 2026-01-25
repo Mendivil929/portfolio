@@ -5,10 +5,11 @@ import MotionTransition from "./transition-component"
 
 const AvatarServices = () => {
   return (
-    <MotionTransition position="right"
-        className="bottom-0 left-0 hidden md:inline-block md:absolute"
+    <MotionTransition
+      position="bottom"
+      className="bottom-0 left-0 hidden xl:inline-block md:absolute"
     >
-        <Image src="/services.png" width={300} height={300} className="w-[350px] h-full" alt="Avatar" />
+        <Image src="/MyIsaacAvatarServices.png" width={300} height={300} className="w-[370px] h-full" alt="Avatar" />
     </MotionTransition>
   )
 }

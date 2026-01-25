@@ -1,17 +1,18 @@
 import AvatarServices from '@/components/avatar-services'
+import BuyButton from '@/components/buy-button'
 import CircleImage from '@/components/circle-image'
 import SliderServices from '@/components/slider-services'
 import TransitionPage from '@/components/transition-page'
 
 const ServicesPage = () => {
   return (
-    <>
+    <div className='relative w-full min-h-screen pb-20 md:pb-0'>
       <TransitionPage></TransitionPage>
       <CircleImage />
       <AvatarServices />
-      <div className='grid items-center justify-center h-screen
-                      max-w-5xl gap-6 mx-auto md:grid-cols-2 px-20'>
-        <div className='max-w-[450px] mt-20 md:mt-0'>
+      <div className='grid items-center justify-center min-h-screen
+                      max-w-5xl gap-6 mx-auto md:grid-cols-2 px-8 xl:px-20'>
+        <div className='max-w-[450px] mt-20 md:mt-0 flex justify-center flex-col md:block'>
           <h1 className='text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-5'>
             Mis{' '}
             <span className='font-bold text-secondary'>
@@ -24,7 +25,7 @@ const ServicesPage = () => {
             hasta la agilidad de interfaces web modernas con React y Node.js.
             Mi misión es crear software que escale contigo.
           </p>
-          <button className='px-3 py-2 rounded-lg bg-secondary hover:bg-secondary/65 cursor-pointer'>Contacta conmigo</button>
+          <BuyButton />
         </div>
 
         {/* SLIDER */}
@@ -32,7 +33,7 @@ const ServicesPage = () => {
           <SliderServices />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
