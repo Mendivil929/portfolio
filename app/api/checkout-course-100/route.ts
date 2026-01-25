@@ -21,7 +21,7 @@ export async function POST(request: Request) {
               name: 'Curso Intensivo: Creación de Sitios Web desde 0',
               description: 'Acceso al taller vía Zoom (React, Next.js, Tailwind, Node.js). Lugares Feb 2-6.',
               // Opcional: Puedes subir tu logo de MendivilTech a internet y poner la URL aquí
-               images: ['http://localhost:3000/LogoMendivilTech.png'], 
+               images: ['https://mendivil-tech-portfolio.netlify.app/LogoMendivilTech.png'], 
             },
             // PRECIO IMPORTANTE: $100.00 MXN = 10000 centavos
             unit_amount: 10000, 
@@ -33,7 +33,7 @@ export async function POST(request: Request) {
       // Éxito: A una página de agradecimiento específica (la crearemos luego si quieres)
       success_url: `https://cal.com/isaac-salazar-5gbiuv/curso-intensivo-de-sitio-web-con-react-desde-0`,
       // Cancelar: De vuelta a la landing del curso
-      cancel_url: `${baseUrl}/courses`,
+      cancel_url: `https://mendivil-tech-portfolio.netlify.app/courses`,
       
       // IMPORTANTE: Para recolectar el correo y enviar el Zoom
       customer_email: undefined, // Dejar undefined para que Stripe le pida el correo al usuario en el checkout
