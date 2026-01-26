@@ -18,7 +18,7 @@ const urbanist = Urbanist({
 
 export const metadata: Metadata = {
   title: "Mendivil Portfolio 💻",
-  description: "Welcome to my personal portfolio website!"
+  description: "Welcome to your online technology training!"
 };
 
 export default function RootLayout({
