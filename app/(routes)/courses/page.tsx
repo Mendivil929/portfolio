@@ -1,10 +1,12 @@
 import TransitionPage from '@/components/transition-page'
 import BuyCourseButton from '@/components/buy-course-button'
 import Image from 'next/image'
+import CoverParticles from '@/components/cover-particles'
 
 const CoursesPage = () => {
   return (
     <>
+      <CoverParticles />
       <TransitionPage />
       <div className='min-h-screen pb-20 pt-28 md:pt-36 bg-gradient-to-b from-darkBg to-darkBg/50'>
         <div className='max-w-5xl mx-auto px-5 md:px-8 xl:px-20'>
