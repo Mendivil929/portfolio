@@ -7,7 +7,6 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 export async function POST(request: Request) {
   try {
-    // URL base para las redirecciones
     const baseUrl = process.env.NEXT_PUBLIC_URL || 'http://localhost:3000';
 
     const session = await stripe.checkout.sessions.create({
@@ -19,7 +18,7 @@ export async function POST(request: Request) {
             product_data: {
               // Nombre exacto del curso según tu flyer
               name: 'Curso Intensivo: Creación de Sitios Web desde 0',
-              description: 'Acceso al taller vía Zoom (React, Next.js, Tailwind, Node.js). Lugares Feb 2-6.',
+              description: 'Acceso al taller vía Zoom (React, Next.js, Tailwind, Node.js). Lugares Feb 9-13.',
               // Opcional: Puedes subir tu logo de MendivilTech a internet y poner la URL aquí
                images: ['https://mendivil-tech-portfolio.netlify.app/LogoMendivilTech.png'], 
             },

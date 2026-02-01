@@ -6,17 +6,11 @@ const CoursesPage = () => {
   return (
     <>
       <TransitionPage />
-      {/* Contenedor principal con un fondo sutil */}
       <div className='min-h-screen pb-20 pt-28 md:pt-36 bg-gradient-to-b from-darkBg to-darkBg/50'>
         <div className='max-w-5xl mx-auto px-5 md:px-8 xl:px-20'>
-          
-          {/* ENCABEZADO TIPO FLYER */}
           <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
-            {/* Texto Principal */}
             <div className="flex-1 text-center md:text-left">
-               {/* Logos de tecnologías pequeñas arriba */}
                <div className="flex mt-5 md:mt-0 justify-center md:justify-start gap-2 mb-6 opacity-80">
-                 {/* Puedes poner iconos de React/Nextjs aquí si los tienes */}
                  <span className="text-sm bg-white/10 px-3 py-1 rounded-full">React.js</span>
                  <span className="text-sm bg-white/10 px-3 py-1 rounded-full">Next.js</span>
                  <span className="text-sm bg-white/10 px-3 py-1 rounded-full">Tailwind CSS</span>
@@ -41,28 +35,21 @@ const CoursesPage = () => {
                </div>
             </div>
 
-            {/* Imagen del Flyer (La parte gráfica) */}
-            {/* IMPORTANTE: Guarda la parte gráfica de tu flyer (el logo 3D azul) 
-                como una imagen separada, ej: /course-graphic.png en tu carpeta public */}
             <div className="flex-1 relative">
-               {/* Placeholder visual similar a tu flyer */}
                <div className="aspect-video bg-gradient-to-tr from-blue-900 to-secondary/30 rounded-3xl flex items-center justify-center p-10 shadow-2xl shadow-secondary/20">
                     <Image src="/LogoMendivilTech.png"  alt='Logo' width={300} height={300}/>
-                    {/* <h2 className="text-4xl font-bold text-white/20 text-center">
-                        MendivilTech <br/> DEV
-                    </h2> */}
                </div>
             </div>
           </div>
 
-          {/* DETALLES DEL CURSO (Fecha y Hora) */}
+          {/* Fecha y Hora */}
           <div className="grid md:grid-cols-2 gap-8 mt-10 max-w-3xl mx-auto">
             {/* Tarjeta de Fechas */}
             <div className="bg-white/5 p-6 rounded-xl border-l-4 border-secondary flex items-start gap-4">
               <div className="text-3xl">📅</div>
               <div>
                 <h3 className="text-xl font-bold mb-1">¿Cuándo?</h3>
-                <p className="text-lg">Del 2 al 6 de Febrero, 2026.</p>
+                <p className="text-lg">Del 9 al 13 de Febrero, 2026.</p>
               </div>
             </div>
             {/* Tarjeta de Horario */}

@@ -3,8 +3,7 @@
 const BuyButton = () => {
   const handleBuy = async () => {
     try {
-      // 1. Llamamos a NUESTRO backend
-      const response = await fetch('/api/checkout', {
+      const response = await fetch('/api/checkout-course-100', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

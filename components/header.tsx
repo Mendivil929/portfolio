@@ -1,11 +1,22 @@
+"use client"
 import Link from "next/link";
 
 import { socialNetworks } from "@/data";
 
 import MotionTransition from "./transition-component";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
-  return (
+    const router = usePathname();
+
+    const socialToDisplay = socialNetworks.filter((network) => {
+        if (router === '/courses') {
+            return network.id === 2 || network.id === 4
+        }
+        return true
+    }) 
+
+    return (
     <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10 px-5 md:px-20">
         <header>
             <div className="container justify-between w-full mx-auto md:flex">
@@ -18,7 +29,7 @@ const Header = () => {
                     </h1>
                 </Link>
                 <div className="flex items-center justify-center gap-7">
-                    {socialNetworks.map(({logo, src, id}) => (
+                    {socialToDisplay.map(({logo, src, id}) => (
                         <Link 
                         key={id}
                         href={src}
@@ -32,7 +43,7 @@ const Header = () => {
             </div>
         </header>
     </MotionTransition>
-  )
+    )
 }
 
 export default Header;
